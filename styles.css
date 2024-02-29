@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #BCA37F;
+}
+header {
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+    padding: 14px;
+    font-size: 24px;
+    color: white;
+}
+
+ul li a{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+.main{
+    width: 90%;
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centrar-caja{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centrar-caja img{
+    width: 300px;
+    border-radius: 15px;
+    
+}
+
+#album1, #album2, #album3, #album4, #album5, #album6, #album7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrar-caja button {
+    text-align: center;
+    margin: 10px;
+    background-color: #E5C3A6;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border: none;
+    overflow: hidden;
+    
+  
+}
+
+.centrar-caja button a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    transition: .3;
+    padding: 30px;
+}
+
+.centrar-caja button a span{
+    position: absolute;
+    /* z-index: 2; */
+    width: 190px;
+    height: 100px;
+    border-radius: 50%;
+    background: #3d2f1c;
+    top: -15%;
+    left: -300%;
+    transition: .3s;
+    color: white;
+
+}
+
+.centrar-caja button:hover span{
+    left: -10%;
+}
+
+.centrar-caja button:hover span{
+    box-shadow: 0 5px 5px ;
+    color: #E1C76F;
+}
